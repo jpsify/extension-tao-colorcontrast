@@ -1,0 +1,27 @@
+////
+/// TAO CSS SDK
+/// QTI match interaction
+/// @group Item interactions
+////
+
+.qti-matchInteraction {
+    table {
+        border: 2px $textColor solid;
+        &.matrix {
+            th, tr, td {
+                border: 2px $textColor solid;
+            }
+            th {
+                background: transparent;
+            }
+            tr {
+                &:nth-child(even){
+                    background: $itemBg !important;
+                }
+                &:nth-child(odd){
+                    background: $itemBg !important;
+                }
+            }
+        }
+    }
+}

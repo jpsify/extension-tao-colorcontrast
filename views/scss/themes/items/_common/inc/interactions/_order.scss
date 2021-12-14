@@ -1,0 +1,52 @@
+////
+/// TAO CSS SDK
+/// QTI order interaction
+/// @group Item interactions
+////
+
+.qti-orderInteraction {
+    .arrow-bar {
+        span {
+            color: whiten($textColor, .5);
+            background: $uiClickableDefaultBg;
+            text-shadow: none;
+            &.active {
+                background: $uiClickableActiveBg;
+                color: $textColor;
+                &:hover {
+                    color: $textColor;
+                    background: $uiClickableHoverBg;
+                }
+            }
+            &.triggered {
+                color: $textColor;
+                background: $uiClickableHoverBg;
+            }
+        }
+    }
+
+    &.qti-vertical {
+    }
+
+    &.qti-horizontal {
+    }
+
+    .choice-area {
+        & > .qti-choice {
+        }
+    }
+    .result-area {
+        & > .qti-choice {
+        }
+    }
+
+    li {
+        border-width: 2px !important;
+        &.dropzone.qti-choice {
+            border: 2px $borderColor dashed !important;
+        }
+        &.dragged {
+            border-color: whiten($textColor, .2) !important;
+        }
+    }
+}

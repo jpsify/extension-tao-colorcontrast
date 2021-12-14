@@ -1,0 +1,76 @@
+////
+/// TAO CSS SDK
+/// QTI associate interaction
+/// @group Item interactions
+////
+
+.qti-associateInteraction {
+
+    .empty {
+        &:hover {
+            background: $uiClickableHoverBg !important;
+        }
+    }
+    .choice-area {
+        &.source {
+            &:hover {
+            }
+        }
+        & > .qti-choice {
+        }
+    }
+    .result-area {
+        &.target {
+            &:hover {
+            }
+        }
+        & > li {
+            &:before {
+                border-color: $borderColor;
+            }
+            & > .target {
+                background: $uiClickableDefaultBg;
+                outline: 5px $uiClickableDefaultBg solid;
+                border: 0 none !important;
+                border-radius: 0 !important;
+
+                &.empty {
+                    outline: 5px $borderColor solid;
+                }
+
+                &.active, &.filled:hover {
+                    outline-color: $borderColor;
+                }
+
+                &.active {
+                    background: $uiClickableHoverBg;
+                    &:hover{
+                        background: $uiClickableHoverBg !important;
+                        outline-color: $textColor;
+                    }
+                }
+                &.dragged, &.dragged:hover {
+                    background: $dragged !important;
+                }
+                &.droppable, &.droppable:hover {
+                    background: $droppable !important;
+                }
+                &.dropzone {
+                    background: $droppable !important;
+                    outline-style: dashed;
+                    border: 0 none !important;
+                    border-radius: 0 !important;
+                }
+            }
+        }
+        .remove-choice {
+            color: $textColor;
+            text-shadow: none;
+        }
+        .filled {
+            &:hover{
+                background: $uiClickableHoverBg;
+            }
+        }
+    }
+}

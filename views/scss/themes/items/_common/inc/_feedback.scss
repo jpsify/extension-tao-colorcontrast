@@ -1,0 +1,24 @@
+////
+/// TAO CSS SDK
+/// Feedback pop-ups, all item themes
+/// @group Item feedback
+////
+
+/// all feedbacks in the scope
+[class^="feedback-"], [class*=" feedback-"] {
+    & > [class^="icon-"], & > [class*=" icon-"] {
+    }
+}
+
+
+@each $fbType, $fbColor in $fbColors {
+    #{'.feedback-' + $fbType} {
+        border-color: $textColor !important;
+        background-color: $textColor !important;
+        color: $itemBg !important;
+        .icon {
+            color: $itemBg !important;
+            text-shadow: none !important;
+        }
+    }
+}

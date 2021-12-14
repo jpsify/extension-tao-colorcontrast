@@ -1,0 +1,33 @@
+////
+/// TAO CSS SDK
+/// QTI gap match interaction
+/// @group Item interactions
+////
+
+.qti-gapMatchInteraction {
+    .gapmatch-content {
+        background: $uiClickableDefaultBg;
+        color: $textColor;
+        border-width: 2px;
+
+        &:hover {
+            background: $hover !important;
+        }
+        &.dragged, &.dragged:hover {
+            background: $dragged !important;
+        }
+        &.droppable, &.droppable:hover {
+            background: $droppable !important;
+        }
+        &.empty {
+            border: 2px $droppable dashed !important;
+        }
+        &.dropzone {
+            background: $droppable !important;
+            border: 2px $borderColor dashed !important;
+        }
+        .remove-choice {
+            text-shadow: none;
+        }
+    }
+}

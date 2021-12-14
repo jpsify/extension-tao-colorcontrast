@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.4.0-sprint130\n"
+"PO-Revision-Date: 2020-06-15T15:33:54\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: en-US\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: en-US\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Black on Cream"
+msgstr "クリーム色に黒色"
+
+msgid "Black on Light Blue"
+msgstr "ライトブルーに黒色"
+
+msgid "Black on Light Magenta"
+msgstr "ライトマゼンタに黒色"
+
+msgid "Black on White"
+msgstr "白に黒色"
+
+msgid "Gray on Green"
+msgstr "グリーンにグレイ色"
+
+msgid "White on Black"
+msgstr "黒に白色"
+
+msgid "White on Blue (TAO standard theme)"
+msgstr "ブルーに白色（TAO標準テーマ）"
+
+msgid "Yellow on Blue"
+msgstr "ブルーに黄色"
+

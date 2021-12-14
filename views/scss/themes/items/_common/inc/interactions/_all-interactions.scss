@@ -1,0 +1,47 @@
+////
+/// TAO CSS SDK
+/// All QTI interactions
+/// @group Item interactions
+////
+
+.qti-interaction {
+    .solid {
+        border-color: $borderColor;
+    }
+}
+
+&.runtime {
+
+    .block-listing > li {
+        border-color: $borderColor;
+    }
+
+    .empty {
+        border: 1px $borderColor dashed !important;
+    }
+
+    .block-listing {
+        & > li {
+            &.active {
+                border-color: $textColor !important;
+                background: $hover !important;
+                &:hover {
+                    background: $hover !important;
+                }
+            }
+            &:hover {
+                background: $hover !important;
+            }
+            &.dragged, &.dragged:hover {
+                background: $dragged !important;
+            }
+            &.droppable, &.droppable:hover {
+                background: $droppable !important;
+            }
+            &.dropzone {
+                background: $droppable !important;
+                border: 1px $borderColor dashed !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.mask {
+    border-color: $borderColor;
+    .inner {
+        background-color: $itemBg;
+    }
+    &.moving .inner, &.sizing {
+        border-color: $borderColorTransparent;
+    }
+    .controls {
+        a {
+            color: $textColor;
+            &:hover {
+                color: $textHoverColor;
+            }
+        }
+    }
+}

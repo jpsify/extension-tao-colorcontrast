@@ -1,0 +1,44 @@
+////
+/// TAO CSS SDK
+/// Color definitions, current item theme
+/// @see ../../_common/inc/colors/_base.scss
+/// @group Item Colors
+////
+
+@import './varieties';
+@import '../../../../_common/mixins';
+
+$textColor: $foregroundBlackOnLightBlue;
+$textHoverColor: whiten($textColor, .2);
+$textActiveColor: whiten($textColor, .4);
+$itemBg: $backgroundBlackOnLightBlue;
+$panelBg: whiten($backgroundBlackOnLightBlue, .3);
+
+$disabledColor: whiten($textColor, .5);
+$disabledBg: whiten($itemBg, .5);
+
+$hover: blacken($itemBg, .1);
+$dragged: blacken($itemBg, .18);
+$droppable: blacken($itemBg, .26);
+
+$uiClickableDefaultBg: blacken($itemBg, .1 );
+$uiClickableActiveBg: blacken($itemBg, .18);
+$uiClickableHoverBg: blacken($itemBg, .26);
+
+$selectHighlightText: $foregroundBlackOnLightBlue;
+$selectHighlightBg: whiten($highlightBlackOnLightBlue, .5);
+
+$highlightText: $foregroundBlackOnLightBlue;
+$highlightBg: $highlightBlackOnLightBlue;
+
+$preHighlightText: $backgroundBlackOnLightBlue;
+$preHighlightBg: $foregroundBlackOnLightBlue;
+
+$borderColor: whiten($textColor, .4);
+$borderColorTransparent: rgba($borderColor, 0.75);
+
+$actionColor: $textColor;
+
+@import './forms';
+@import './feedback';
+@import './tables';

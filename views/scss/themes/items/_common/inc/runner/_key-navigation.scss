@@ -1,0 +1,42 @@
+.qti-navigator {
+    &.key-navigation-group {
+        &.focusin {
+            background-color: whiten($panelBg, 0.2);
+        }
+        .qti-navigator-filters {
+            .key-navigation-highlight {
+                &:focus {
+                    .qti-navigator-tab {
+                        border-top-color: $textColor !important;
+                        border-left-color: $textColor !important;
+                        border-right-color: $textColor !important;
+                    }
+                }
+
+            }
+        }
+        li.qti-navigator-item.key-navigation-highlight {
+            border-left-color: $textColor;
+            background: $uiClickableHoverBg;
+            .key-navigation-highlight:focus {
+                background-color: $uiClickableHoverBg;
+            }
+        }
+    }
+}
+
+.content-wrapper {
+    .key-navigation-group:not(.qti-extendedTextInteraction):not(.qti-textEntryInteraction) {
+        &.focusin {
+            border-color: $highlightText !important;
+        }
+        &.qti-interaction {
+            .qti-choice.key-navigation-highlight {
+                background: $hover !important;
+            }
+        }
+    }
+    span.key-navigation-group.focusin {
+        outline-color: $highlightText !important;
+    }
+}

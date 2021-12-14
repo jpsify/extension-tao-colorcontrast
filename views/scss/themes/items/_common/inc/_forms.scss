@@ -1,0 +1,145 @@
+////
+/// TAO CSS SDK
+/// Tables, all themes
+/// @group Item Assets
+////
+
+/// ::input
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="week"],
+textarea,
+select,
+.qti-extendedTextInteraction .solid {
+    color: $textColor !important;
+    background: $uiClickableDefaultBg;
+    border-color: $borderColor;
+
+    &.disabled, &[disabled], &[readonly] {
+        box-shadow: none !important;
+        border-color: $formFieldBorder !important;
+        opacity: 1 !important;
+        color: red
+    }
+    &.disabled, &[disabled] {
+        background: $formFieldDisabled;
+    }
+
+    & ~ .validate-error {
+        color: $formFieldError;
+    }
+    &.error {
+        border-color: $formFieldError;
+        background: whiten($formFieldError, .9);
+        & + .form-error {
+            color: $formFieldError;
+        }
+    }
+    &.success {
+        border-color: $formFieldSuccess;
+        background: whiten($formFieldSuccess, .9);
+    }
+    &:focus {
+        border-color: $formFieldFocus;
+    }
+}
+
+// checkboxes and radio buttons
+
+label {
+    [class^="icon-checkbox"],
+    [class*=" icon-checkbox"] {
+        &:after {
+            color: $formFieldBg !important;
+            text-shadow: none !important;
+        }
+    }
+    [class^="icon-radio"],
+    [class*=" icon-radio"] {
+        &:after {
+            color: $formFieldBg !important;
+            text-shadow: none !important;
+        }
+    }
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+        color: $formFieldBorder !important;
+        text-shadow: none !important;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        &:focus ~ [class^="icon-"],
+        &:focus ~ [class*=" icon-"],
+        &:active ~ [class^="icon-"],
+        &:active ~ [class*=" icon-"] {
+            color: $formFieldActive !important;
+        }
+        &:checked {
+            & ~ .icon-checkbox:before {
+                color: $formFieldChecked !important;
+            }
+            & ~ .icon-radio:before {
+                color: $formFieldChecked !important;
+            }
+            & ~ .icon-checkbox.cross:before {
+                color: $formFieldChecked !important;
+            }
+        }
+        &:focus {
+            & ~ .icon-checkbox,
+            & ~ .icon-checkbox-crossed,
+            & ~ .icon-radio {
+                &::after {
+                    color: $formFieldFocus;
+                    text-shadow: 0px 0px 4px $formFieldFocus, 0px 0px 4px $formFieldFocus;
+                }
+            }
+        }
+        &.disabled, &[disabled], &[readonly] {
+            & ~ [class^="icon-"],
+            & ~ [class*=" icon-"] {
+                color: $formFieldDisabled;
+                opacity: 1 !important;
+                &::after {
+                    color: $formFieldDisabled !important;
+                }
+            }
+        }
+        &:hover {
+            & ~ .icon-checkbox,
+            & ~ .icon-radio {
+                &::after {
+                    color: $formFieldHover !important;
+                }
+            }
+        }
+    }
+}
+
+.pseudo-label-box {
+    & > label {
+        & + div {
+
+        }
+    }
+    &:hover {
+        .icon-checkbox,
+        .icon-radio {
+            &:after {
+            }
+        }
+    }
+}

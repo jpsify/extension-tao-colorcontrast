@@ -1,0 +1,39 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.4.0-sprint130\n"
+"PO-Revision-Date: 2020-06-15T15:33:55\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: nl-NL\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: nl-NL\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Black on Cream"
+msgstr "Zwart op Crème"
+
+msgid "Black on Light Blue"
+msgstr "Zwart op Lichtblauw"
+
+msgid "Black on Light Magenta"
+msgstr "Zwart op Paars"
+
+msgid "Black on White"
+msgstr "Zwart op Wit"
+
+msgid "Gray on Green"
+msgstr "Grijs op Groen"
+
+msgid "White on Black"
+msgstr "Wit op Zwart"
+
+msgid "White on Blue (TAO standard theme)"
+msgstr "Wit op Blauw (Standaard)"
+
+msgid "Yellow on Blue"
+msgstr "Geel op Blauw"
+

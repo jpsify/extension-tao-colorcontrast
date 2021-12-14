@@ -1,0 +1,44 @@
+$lrBgColor: $uiClickableDefaultBg;
+$lrBgColorTransparent: rgba($lrBgColor, 0.55);
+
+.line-reader-mask {
+    border-color: $borderColor;
+    background-color: $lrBgColor;
+
+    &.resizing {
+        background-color: $lrBgColorTransparent;
+        border-color: $borderColorTransparent;
+    }
+}
+
+.line-reader-overlay {
+    &.moving, .inner-window {
+        border-color: $borderColorTransparent;
+    }
+    .mask-bg {
+        border-color: $lrBgColorTransparent;
+    }
+}
+
+.line-reader-inner-drag {
+    background-color: $lrBgColor;
+    color: $textColor;
+
+    &:hover {
+        background-color: $uiClickableActiveBg;
+        color: $textHoverColor;
+    }
+
+    &.moving {
+        background-color: transparent;
+        color: $textActiveColor;
+    }
+}
+
+.line-reader-closer {
+    color: $textColor;
+
+    &:hover {
+        color: $textHoverColor;
+    }
+}

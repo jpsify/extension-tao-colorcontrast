@@ -1,0 +1,20 @@
+////
+/// TAO CSS SDK
+/// QTI upload interaction
+/// @group Item interactions
+////
+
+.qti-uploadInteraction {
+    .progressbar {
+        border-color: $actionColor;
+        background: $uiClickableDefaultBg;
+
+        span {
+            background: $actionColor;
+        }
+    }
+    .file-name, .file-upload-preview {
+        background: $uiClickableDefaultBg;
+        border-color: $borderColor;
+    }
+}

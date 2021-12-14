@@ -1,0 +1,27 @@
+////
+/// TAO CSS SDK
+/// QTI graphic hot text interaction
+/// @group Item interactions
+////
+
+.qti-hottextInteraction {
+
+    .hottext {
+        background: $uiClickableDefaultBg;
+        border: 2px solid $borderColor !important;
+        margin: 0 0 5px 0;
+
+        &:hover {
+            background: $uiClickableHoverBg !important;
+        }
+
+        label {
+            margin: 0;
+        }
+
+        .hottext-checkmark, .hottext-content {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    }
+}

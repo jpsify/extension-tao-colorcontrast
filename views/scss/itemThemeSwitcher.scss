@@ -1,0 +1,53 @@
+@import "./themes/_common/math-functions";
+@import "./themes/_common/color-contrast";
+@import "./themes/_common/theme-colors";
+
+@mixin theme-switcher-entry($text, $background) {
+    background-color: $background !important;
+    &:hover, &.hover {
+        @if color_luminance($background) > .45 {
+            background-color: blacken($background, .18) !important;
+        } @else {
+            background-color: whiten($background, .35) !important;
+        }
+    }
+    a span {
+        color: $text !important;
+    }
+}
+
+.test-runner-scope {
+    .action-bar.content-action-bar {
+        .tools-box {
+            .menu.color-contrast-list {
+                li {
+                    &.active {
+                        font-weight: bold !important;
+                    }
+                }
+
+                [data-control="blackOnWhite"] {
+                    @include theme-switcher-entry($foregroundBlackOnWhite, $backgroundBlackOnWhite);
+                }
+                [data-control="blackOnCream"] {
+                    @include theme-switcher-entry($foregroundBlackOnCream, $backgroundBlackOnCream);
+                }
+                [data-control="blackOnLightBlue"] {
+                    @include theme-switcher-entry($foregroundBlackOnLightBlue, $backgroundBlackOnLightBlue);
+                }
+                [data-control="blackOnLightMagenta"] {
+                    @include theme-switcher-entry($foregroundBlackOnLightMagenta, $backgroundBlackOnLightMagenta);
+                }
+                [data-control="whiteOnBlack"] {
+                    @include theme-switcher-entry($foregroundWhiteOnBlack, $backgroundWhiteOnBlack);
+                }
+                [data-control="yellowOnBlue"] {
+                    @include theme-switcher-entry($foregroundYellowOnBlue, $backgroundYellowOnBlue);
+                }
+                [data-control="grayOnGreen"] {
+                    @include theme-switcher-entry($foregroundGrayOnGreen, $backgroundGrayOnGreen);
+                }
+            }
+        }
+    }
+}

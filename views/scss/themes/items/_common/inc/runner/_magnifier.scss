@@ -1,0 +1,24 @@
+.magnifier {
+    background-color: $itemBg;
+    border-color: $borderColor;
+
+    .level {
+        color: $textColor;
+    }
+
+    > .controls {
+        background-color: $itemBg;
+        border-color: $borderColor;
+
+        a {
+            color: $textColor;
+            &:hover {
+                color: $textHoverColor;
+            }
+        }
+    }
+
+    &.sizing {
+        border-color: $borderColorTransparent;
+    }
+}

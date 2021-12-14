@@ -1,0 +1,16 @@
+.qti-choiceInteraction {
+    &.maskable {
+        .qti-choice {
+            .answer-mask {
+                color: $textColor !important;
+                border-color: $textColor;
+                background-color: $itemBg;
+                &:hover {
+                    color: $textHoverColor !important;
+                    border-color: $textHoverColor;
+                    background-color: $hover;
+                }
+            }
+        }
+    }
+}
